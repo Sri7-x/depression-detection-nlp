@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindCare Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1> Context Analysis</h1>
+            <p>Understand your emotions and find your path to wellness.</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <label for="textInput">Paste your Instagram description or thoughts here:</label>
+                <textarea id="textInput" placeholder="I've been feeling..."></textarea>
+                <button id="analyzeBtn">Analyze Wellness</button>
+            </section>
+
+            <section id="resultSection" class="result-section hidden">
+                <div class="loader hidden" id="loader"></div>
+                <div id="resultContent">
+                    <h2>Analysis Result</h2>
+                    <div class="level-indicator">
+                        <span>Depression Level:</span>
+                        <span id="levelValue" class="badge">--</span>
+                    </div>
+                    <p class="confidence">Sadness Score: <span id="confidenceValue">0</span></p>
+
+                    <div class="recommendations">
+                        <h3>Recommended Steps for You</h3>
+                        <ul id="recommendationList">
+                            <!-- Items will be injected here -->
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with 💚 for Mental Health Awareness</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
